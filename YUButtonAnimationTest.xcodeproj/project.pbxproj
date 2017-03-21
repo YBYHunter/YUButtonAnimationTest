@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B2D6A7A1E7BE472006BAE5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D6A791E7BE472006BAE5B /* main.m */; };
+		6B2D6A7D1E7BE472006BAE5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D6A7C1E7BE472006BAE5B /* AppDelegate.m */; };
+		6B2D6A801E7BE472006BAE5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D6A7F1E7BE472006BAE5B /* ViewController.m */; };
+		6B2D6A831E7BE472006BAE5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2D6A811E7BE472006BAE5B /* Main.storyboard */; };
+		6B2D6A851E7BE472006BAE5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B2D6A841E7BE472006BAE5B /* Assets.xcassets */; };
+		6B2D6A881E7BE472006BAE5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2D6A861E7BE472006BAE5B /* LaunchScreen.storyboard */; };
+		6B2D6A931E7BE472006BAE5B /* YUButtonAnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D6A921E7BE472006BAE5B /* YUButtonAnimationTestTests.m */; };
+		6B2D6A9E1E7BE472006BAE5B /* YUButtonAnimationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D6A9D1E7BE472006BAE5B /* YUButtonAnimationTestUITests.m */; };
+		6B2D6AAD1E7BE569006BAE5B /* ChatScreeninButView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D6AAC1E7BE569006BAE5B /* ChatScreeninButView.m */; };
+		6B2D6AAF1E7BE5D2006BAE5B /* list_circulardottedline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B2D6AAE1E7BE5D2006BAE5B /* list_circulardottedline@2x.png */; };
+		6B2D6AB11E7BE6EC006BAE5B /* yuan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B2D6AB01E7BE6EC006BAE5B /* yuan@3x.png */; };
+		6B2D6AB51E7BE939006BAE5B /* UIView+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D6AB41E7BE939006BAE5B /* UIView+addition.m */; };
+		6B2D6AB81E7BE97D006BAE5B /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D6AB61E7BE97D006BAE5B /* UIImageView+CornerRadius.m */; };
+		6BADB7F31E7FB39D000BBB6C /* CMSCoinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BADB7F21E7FB39D000BBB6C /* CMSCoinView.m */; };
+		6BADB7F61E7FF310000BBB6C /* ChatScreeninViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BADB7F51E7FF310000BBB6C /* ChatScreeninViewModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B2D6A8F1E7BE472006BAE5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B2D6A6D1E7BE472006BAE5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B2D6A741E7BE472006BAE5B;
+			remoteInfo = YUButtonAnimationTest;
+		};
+		6B2D6A9A1E7BE472006BAE5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B2D6A6D1E7BE472006BAE5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B2D6A741E7BE472006BAE5B;
+			remoteInfo = YUButtonAnimationTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B2D6A751E7BE472006BAE5B /* YUButtonAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YUButtonAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B2D6A791E7BE472006BAE5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B2D6A7B1E7BE472006BAE5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B2D6A7C1E7BE472006BAE5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B2D6A7E1E7BE472006BAE5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6B2D6A7F1E7BE472006BAE5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6B2D6A821E7BE472006BAE5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B2D6A841E7BE472006BAE5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B2D6A871E7BE472006BAE5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B2D6A891E7BE472006BAE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B2D6A8E1E7BE472006BAE5B /* YUButtonAnimationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YUButtonAnimationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B2D6A921E7BE472006BAE5B /* YUButtonAnimationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YUButtonAnimationTestTests.m; sourceTree = "<group>"; };
+		6B2D6A941E7BE472006BAE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B2D6A991E7BE472006BAE5B /* YUButtonAnimationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YUButtonAnimationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B2D6A9D1E7BE472006BAE5B /* YUButtonAnimationTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YUButtonAnimationTestUITests.m; sourceTree = "<group>"; };
+		6B2D6A9F1E7BE472006BAE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B2D6AAB1E7BE569006BAE5B /* ChatScreeninButView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatScreeninButView.h; path = ../ChatScreeninButView.h; sourceTree = "<group>"; };
+		6B2D6AAC1E7BE569006BAE5B /* ChatScreeninButView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatScreeninButView.m; path = ../ChatScreeninButView.m; sourceTree = "<group>"; };
+		6B2D6AAE1E7BE5D2006BAE5B /* list_circulardottedline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_circulardottedline@2x.png"; sourceTree = "<group>"; };
+		6B2D6AB01E7BE6EC006BAE5B /* yuan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yuan@3x.png"; sourceTree = "<group>"; };
+		6B2D6AB31E7BE939006BAE5B /* UIView+addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+addition.h"; sourceTree = "<group>"; };
+		6B2D6AB41E7BE939006BAE5B /* UIView+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+addition.m"; sourceTree = "<group>"; };
+		6B2D6AB61E7BE97D006BAE5B /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
+		6B2D6AB71E7BE97D006BAE5B /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
+		6BADB7F11E7FB39D000BBB6C /* CMSCoinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSCoinView.h; sourceTree = "<group>"; };
+		6BADB7F21E7FB39D000BBB6C /* CMSCoinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSCoinView.m; sourceTree = "<group>"; };
+		6BADB7F41E7FF310000BBB6C /* ChatScreeninViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatScreeninViewModel.h; path = ../ChatScreeninViewModel.h; sourceTree = "<group>"; };
+		6BADB7F51E7FF310000BBB6C /* ChatScreeninViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatScreeninViewModel.m; path = ../ChatScreeninViewModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B2D6A721E7BE472006BAE5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2D6A8B1E7BE472006BAE5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2D6A961E7BE472006BAE5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B2D6A6C1E7BE472006BAE5B = {
+			isa = PBXGroup;
+			children = (
+				6B2D6A771E7BE472006BAE5B /* YUButtonAnimationTest */,
+				6B2D6A911E7BE472006BAE5B /* YUButtonAnimationTestTests */,
+				6B2D6A9C1E7BE472006BAE5B /* YUButtonAnimationTestUITests */,
+				6B2D6A761E7BE472006BAE5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B2D6A761E7BE472006BAE5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B2D6A751E7BE472006BAE5B /* YUButtonAnimationTest.app */,
+				6B2D6A8E1E7BE472006BAE5B /* YUButtonAnimationTestTests.xctest */,
+				6B2D6A991E7BE472006BAE5B /* YUButtonAnimationTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B2D6A771E7BE472006BAE5B /* YUButtonAnimationTest */ = {
+			isa = PBXGroup;
+			children = (
+				6B2D6A7B1E7BE472006BAE5B /* AppDelegate.h */,
+				6B2D6A7C1E7BE472006BAE5B /* AppDelegate.m */,
+				6B2D6A7E1E7BE472006BAE5B /* ViewController.h */,
+				6B2D6A7F1E7BE472006BAE5B /* ViewController.m */,
+				6BADB7F01E7FB39D000BBB6C /* CMSCoinView */,
+				6B2D6AB21E7BE939006BAE5B /* UIView+addition */,
+				6B2D6AAE1E7BE5D2006BAE5B /* list_circulardottedline@2x.png */,
+				6B2D6AB01E7BE6EC006BAE5B /* yuan@3x.png */,
+				6B2D6A811E7BE472006BAE5B /* Main.storyboard */,
+				6B2D6A841E7BE472006BAE5B /* Assets.xcassets */,
+				6B2D6A861E7BE472006BAE5B /* LaunchScreen.storyboard */,
+				6B2D6A891E7BE472006BAE5B /* Info.plist */,
+				6B2D6A781E7BE472006BAE5B /* Supporting Files */,
+			);
+			path = YUButtonAnimationTest;
+			sourceTree = "<group>";
+		};
+		6B2D6A781E7BE472006BAE5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B2D6A791E7BE472006BAE5B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B2D6A911E7BE472006BAE5B /* YUButtonAnimationTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B2D6A921E7BE472006BAE5B /* YUButtonAnimationTestTests.m */,
+				6B2D6A941E7BE472006BAE5B /* Info.plist */,
+			);
+			path = YUButtonAnimationTestTests;
+			sourceTree = "<group>";
+		};
+		6B2D6A9C1E7BE472006BAE5B /* YUButtonAnimationTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6B2D6A9D1E7BE472006BAE5B /* YUButtonAnimationTestUITests.m */,
+				6B2D6A9F1E7BE472006BAE5B /* Info.plist */,
+			);
+			path = YUButtonAnimationTestUITests;
+			sourceTree = "<group>";
+		};
+		6B2D6AB21E7BE939006BAE5B /* UIView+addition */ = {
+			isa = PBXGroup;
+			children = (
+				6B2D6AB61E7BE97D006BAE5B /* UIImageView+CornerRadius.m */,
+				6B2D6AB71E7BE97D006BAE5B /* UIImageView+CornerRadius.h */,
+				6B2D6AB31E7BE939006BAE5B /* UIView+addition.h */,
+				6B2D6AB41E7BE939006BAE5B /* UIView+addition.m */,
+			);
+			path = "UIView+addition";
+			sourceTree = "<group>";
+		};
+		6BADB7F01E7FB39D000BBB6C /* CMSCoinView */ = {
+			isa = PBXGroup;
+			children = (
+				6B2D6AAB1E7BE569006BAE5B /* ChatScreeninButView.h */,
+				6B2D6AAC1E7BE569006BAE5B /* ChatScreeninButView.m */,
+				6BADB7F41E7FF310000BBB6C /* ChatScreeninViewModel.h */,
+				6BADB7F51E7FF310000BBB6C /* ChatScreeninViewModel.m */,
+				6BADB7F11E7FB39D000BBB6C /* CMSCoinView.h */,
+				6BADB7F21E7FB39D000BBB6C /* CMSCoinView.m */,
+			);
+			path = CMSCoinView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B2D6A741E7BE472006BAE5B /* YUButtonAnimationTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B2D6AA21E7BE472006BAE5B /* Build configuration list for PBXNativeTarget "YUButtonAnimationTest" */;
+			buildPhases = (
+				6B2D6A711E7BE472006BAE5B /* Sources */,
+				6B2D6A721E7BE472006BAE5B /* Frameworks */,
+				6B2D6A731E7BE472006BAE5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YUButtonAnimationTest;
+			productName = YUButtonAnimationTest;
+			productReference = 6B2D6A751E7BE472006BAE5B /* YUButtonAnimationTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B2D6A8D1E7BE472006BAE5B /* YUButtonAnimationTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B2D6AA51E7BE472006BAE5B /* Build configuration list for PBXNativeTarget "YUButtonAnimationTestTests" */;
+			buildPhases = (
+				6B2D6A8A1E7BE472006BAE5B /* Sources */,
+				6B2D6A8B1E7BE472006BAE5B /* Frameworks */,
+				6B2D6A8C1E7BE472006BAE5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B2D6A901E7BE472006BAE5B /* PBXTargetDependency */,
+			);
+			name = YUButtonAnimationTestTests;
+			productName = YUButtonAnimationTestTests;
+			productReference = 6B2D6A8E1E7BE472006BAE5B /* YUButtonAnimationTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B2D6A981E7BE472006BAE5B /* YUButtonAnimationTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B2D6AA81E7BE472006BAE5B /* Build configuration list for PBXNativeTarget "YUButtonAnimationTestUITests" */;
+			buildPhases = (
+				6B2D6A951E7BE472006BAE5B /* Sources */,
+				6B2D6A961E7BE472006BAE5B /* Frameworks */,
+				6B2D6A971E7BE472006BAE5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B2D6A9B1E7BE472006BAE5B /* PBXTargetDependency */,
+			);
+			name = YUButtonAnimationTestUITests;
+			productName = YUButtonAnimationTestUITests;
+			productReference = 6B2D6A991E7BE472006BAE5B /* YUButtonAnimationTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B2D6A6D1E7BE472006BAE5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "于博洋";
+				TargetAttributes = {
+					6B2D6A741E7BE472006BAE5B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D882YEGCUP;
+						ProvisioningStyle = Automatic;
+					};
+					6B2D6A8D1E7BE472006BAE5B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D882YEGCUP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6B2D6A741E7BE472006BAE5B;
+					};
+					6B2D6A981E7BE472006BAE5B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D882YEGCUP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6B2D6A741E7BE472006BAE5B;
+					};
+				};
+			};
+			buildConfigurationList = 6B2D6A701E7BE472006BAE5B /* Build configuration list for PBXProject "YUButtonAnimationTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B2D6A6C1E7BE472006BAE5B;
+			productRefGroup = 6B2D6A761E7BE472006BAE5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B2D6A741E7BE472006BAE5B /* YUButtonAnimationTest */,
+				6B2D6A8D1E7BE472006BAE5B /* YUButtonAnimationTestTests */,
+				6B2D6A981E7BE472006BAE5B /* YUButtonAnimationTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B2D6A731E7BE472006BAE5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B2D6A881E7BE472006BAE5B /* LaunchScreen.storyboard in Resources */,
+				6B2D6A851E7BE472006BAE5B /* Assets.xcassets in Resources */,
+				6B2D6A831E7BE472006BAE5B /* Main.storyboard in Resources */,
+				6B2D6AB11E7BE6EC006BAE5B /* yuan@3x.png in Resources */,
+				6B2D6AAF1E7BE5D2006BAE5B /* list_circulardottedline@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2D6A8C1E7BE472006BAE5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2D6A971E7BE472006BAE5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B2D6A711E7BE472006BAE5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B2D6AB51E7BE939006BAE5B /* UIView+addition.m in Sources */,
+				6B2D6A801E7BE472006BAE5B /* ViewController.m in Sources */,
+				6B2D6AAD1E7BE569006BAE5B /* ChatScreeninButView.m in Sources */,
+				6B2D6A7D1E7BE472006BAE5B /* AppDelegate.m in Sources */,
+				6BADB7F31E7FB39D000BBB6C /* CMSCoinView.m in Sources */,
+				6BADB7F61E7FF310000BBB6C /* ChatScreeninViewModel.m in Sources */,
+				6B2D6A7A1E7BE472006BAE5B /* main.m in Sources */,
+				6B2D6AB81E7BE97D006BAE5B /* UIImageView+CornerRadius.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2D6A8A1E7BE472006BAE5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B2D6A931E7BE472006BAE5B /* YUButtonAnimationTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2D6A951E7BE472006BAE5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B2D6A9E1E7BE472006BAE5B /* YUButtonAnimationTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B2D6A901E7BE472006BAE5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B2D6A741E7BE472006BAE5B /* YUButtonAnimationTest */;
+			targetProxy = 6B2D6A8F1E7BE472006BAE5B /* PBXContainerItemProxy */;
+		};
+		6B2D6A9B1E7BE472006BAE5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B2D6A741E7BE472006BAE5B /* YUButtonAnimationTest */;
+			targetProxy = 6B2D6A9A1E7BE472006BAE5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B2D6A811E7BE472006BAE5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B2D6A821E7BE472006BAE5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B2D6A861E7BE472006BAE5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B2D6A871E7BE472006BAE5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B2D6AA01E7BE472006BAE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B2D6AA11E7BE472006BAE5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B2D6AA31E7BE472006BAE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D882YEGCUP;
+				INFOPLIST_FILE = YUButtonAnimationTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yu.YUButtonAnimationTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6B2D6AA41E7BE472006BAE5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D882YEGCUP;
+				INFOPLIST_FILE = YUButtonAnimationTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yu.YUButtonAnimationTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6B2D6AA61E7BE472006BAE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D882YEGCUP;
+				INFOPLIST_FILE = YUButtonAnimationTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yu.YUButtonAnimationTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YUButtonAnimationTest.app/YUButtonAnimationTest";
+			};
+			name = Debug;
+		};
+		6B2D6AA71E7BE472006BAE5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D882YEGCUP;
+				INFOPLIST_FILE = YUButtonAnimationTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yu.YUButtonAnimationTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YUButtonAnimationTest.app/YUButtonAnimationTest";
+			};
+			name = Release;
+		};
+		6B2D6AA91E7BE472006BAE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D882YEGCUP;
+				INFOPLIST_FILE = YUButtonAnimationTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yu.YUButtonAnimationTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YUButtonAnimationTest;
+			};
+			name = Debug;
+		};
+		6B2D6AAA1E7BE472006BAE5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D882YEGCUP;
+				INFOPLIST_FILE = YUButtonAnimationTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yu.YUButtonAnimationTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YUButtonAnimationTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B2D6A701E7BE472006BAE5B /* Build configuration list for PBXProject "YUButtonAnimationTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B2D6AA01E7BE472006BAE5B /* Debug */,
+				6B2D6AA11E7BE472006BAE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B2D6AA21E7BE472006BAE5B /* Build configuration list for PBXNativeTarget "YUButtonAnimationTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B2D6AA31E7BE472006BAE5B /* Debug */,
+				6B2D6AA41E7BE472006BAE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B2D6AA51E7BE472006BAE5B /* Build configuration list for PBXNativeTarget "YUButtonAnimationTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B2D6AA61E7BE472006BAE5B /* Debug */,
+				6B2D6AA71E7BE472006BAE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B2D6AA81E7BE472006BAE5B /* Build configuration list for PBXNativeTarget "YUButtonAnimationTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B2D6AA91E7BE472006BAE5B /* Debug */,
+				6B2D6AAA1E7BE472006BAE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B2D6A6D1E7BE472006BAE5B /* Project object */;
+}
