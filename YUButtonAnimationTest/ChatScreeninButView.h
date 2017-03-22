@@ -24,11 +24,31 @@ typedef NS_ENUM(NSInteger, ChatScreeninButViewType) {
 
 
 @property (nonatomic,weak) id<ChatScreeninButViewDelete> butViewDelete;
+//@property (nonatomic, copy) void (^didClickBlock)(BOOL isCanClick);
 
 @property (nonatomic, copy) NSString * titleStr;
 
 @property (nonatomic,assign) ChatScreeninButViewType currentType;
 
+@property (nonatomic,assign) BOOL isAnimation; //正在执行动画
+
 - (void)changeTypeWithType:(ChatScreeninButViewType)type animation:(BOOL)animation;
+
+- (void)tapAction;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

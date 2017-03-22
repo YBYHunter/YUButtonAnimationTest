@@ -38,6 +38,10 @@
         }
     }
     
+    if (self.didClickBlock) {
+        self.didClickBlock(YES);
+    }
+    
 }
 
 

@@ -51,16 +51,15 @@ static CGFloat const sideBorderWidth = 5;
         
         [self addSubview:self.activityIndicator];
         
-        self.userInteractionEnabled = YES;
-        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];
-        [self addGestureRecognizer:tap];
+        _isAnimation = NO;
         
     }
     return self;
 }
 
 - (void)tapAction {
-    
+
+    _isAnimation = YES;
     if (self.currentType == ChatScreeninButViewTypeNone) {
         [self changeTypeWithType:ChatScreeninButViewTypeLoading animation:YES];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -68,7 +67,7 @@ static CGFloat const sideBorderWidth = 5;
         });
     }
     else if(self.currentType == ChatScreeninButViewTypeSelect){
-//        [self changeTypeWithType:ChatScreeninButViewTypeNone animation:YES];
+
     }
     
     
@@ -88,7 +87,6 @@ static CGFloat const sideBorderWidth = 5;
         if (type == ChatScreeninButViewTypeNone) {
             
             [self.activityIndicator stopAnimating];
-            
             [self animationWithClose];
             
         }
@@ -108,12 +106,16 @@ static CGFloat const sideBorderWidth = 5;
             self.midView.hidden = YES;
             self.bottomView.hidden = YES;
             
+            _isAnimation = NO;
+            
         }
         else if (type == ChatScreeninButViewTypeSelect) {
             
             [self.activityIndicator stopAnimating];
             [self animationWithOpen];
             [self.flipView flipTouched:YES animation:NO];
+            
+            _isAnimation = NO;
             
         }
     }
@@ -137,7 +139,7 @@ static CGFloat const sideBorderWidth = 5;
         [self animationWithOpen];
     }
     else {
-
+        _isAnimation = NO;
     }
     
 }
@@ -214,6 +216,7 @@ static CGFloat const sideBorderWidth = 5;
             } completion:^(BOOL finished) {
                 if (finished) {
                     [self startHobbiesAnimation];
+                    _isAnimation = NO;
                 }
             }];
         }

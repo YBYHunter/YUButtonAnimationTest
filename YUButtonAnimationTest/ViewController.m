@@ -7,20 +7,15 @@
 //
 
 #import "ViewController.h"
-#import "ChatScreeninButView.h"
-#import "ChatScreeninViewModel.h"
+#import "ChatScreeninContainerView.h"
 
-@interface ViewController ()<ChatScreeninButViewDelete>
+@interface ViewController ()
 
 @property (nonatomic,strong) UIImageView * leftLinImageView;
 
-@property (nonatomic,strong) ChatScreeninButView * chatScreeninButView;
+@property (nonatomic,strong) ChatScreeninContainerView * chatScreeninContainerView;
 
-@property (nonatomic,strong) ChatScreeninButView * chatScreeninButView2;
-
-@property (nonatomic,strong) ChatScreeninButView * chatScreeninButView3;
-
-@property (nonatomic,strong) ChatScreeninViewModel * chatScreeninViewModel;
+@property (nonatomic,assign) BOOL isAnimation; //正在执行动画
 
 @end
 
@@ -33,65 +28,18 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     [self.view addSubview:self.leftLinImageView];
-    [self.view addSubview:self.chatScreeninButView];
-    [self.view addSubview:self.chatScreeninButView2];
-    [self.view addSubview:self.chatScreeninButView3];
-    
-    self.chatScreeninButView.center = CGPointMake(self.leftLinImageView.frame.origin.x + self.leftLinImageView.frame.size.width , self.leftLinImageView.frame.size.height/2);
-    
-    self.chatScreeninButView2.center = CGPointMake((self.leftLinImageView.frame.origin.x + self.leftLinImageView.frame.size.width)/2 + self.chatScreeninButView2.frame.size.width , self.leftLinImageView.frame.size.height/4 + self.chatScreeninButView2.frame.size.width);
-    
-    self.chatScreeninButView3.center = CGPointMake((self.leftLinImageView.frame.origin.x + self.leftLinImageView.frame.size.width)/2 + self.chatScreeninButView2.frame.size.width , self.leftLinImageView.frame.size.height/2 + self.chatScreeninButView2.frame.size.width + 40);
-    
-    
-    [self.chatScreeninViewModel.viewList addObject:self.chatScreeninButView];
-    [self.chatScreeninViewModel.viewList addObject:self.chatScreeninButView2];
-    [self.chatScreeninViewModel.viewList addObject:self.chatScreeninButView3];
-}
+    [self.view addSubview:self.chatScreeninContainerView];
 
-#pragma mark - ChatScreeninButViewDelete
-
-- (void)ChatScreeninButViewDidClick:(UIView *)butView currentType:(ChatScreeninButViewType)currentType {
-    [self.chatScreeninViewModel changeOtherViewType:(ChatScreeninButView *)butView currentType:currentType];
 }
 
 #pragma mark - getter
 
--(ChatScreeninViewModel *)chatScreeninViewModel {
-    if (_chatScreeninViewModel == nil) {
-        _chatScreeninViewModel = [[ChatScreeninViewModel alloc] init];
+- (ChatScreeninContainerView *)chatScreeninContainerView {
+    if (_chatScreeninContainerView == nil) {
+        CGRect rect = CGRectMake(0, 0, self.leftLinImageView.frame.size.width/2, self.leftLinImageView.frame.size.height);
+        _chatScreeninContainerView = [[ChatScreeninContainerView alloc] initWithFrame:rect];
     }
-    return _chatScreeninViewModel;
-}
-
-- (ChatScreeninButView *)chatScreeninButView {
-    if (_chatScreeninButView == nil) {
-        _chatScreeninButView = [[ChatScreeninButView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-        [_chatScreeninButView changeTypeWithType:ChatScreeninButViewTypeNone animation:NO];
-        _chatScreeninButView.butViewDelete = self;
-        _chatScreeninButView.titleStr = @"距离";
-    }
-    return _chatScreeninButView;
-}
-
-- (ChatScreeninButView *)chatScreeninButView2 {
-    if (_chatScreeninButView2 == nil) {
-        _chatScreeninButView2 = [[ChatScreeninButView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-        [_chatScreeninButView2 changeTypeWithType:ChatScreeninButViewTypeSelect animation:NO];
-        _chatScreeninButView2.butViewDelete = self;
-        _chatScreeninButView2.titleStr = @"全部";
-    }
-    return _chatScreeninButView2;
-}
-
-- (ChatScreeninButView *)chatScreeninButView3 {
-    if (_chatScreeninButView3 == nil) {
-        _chatScreeninButView3 = [[ChatScreeninButView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-        [_chatScreeninButView3 changeTypeWithType:ChatScreeninButViewTypeNone animation:NO];
-        _chatScreeninButView3.butViewDelete = self;
-        _chatScreeninButView3.titleStr = @"目的";
-    }
-    return _chatScreeninButView3;
+    return _chatScreeninContainerView;
 }
 
 - (UIImageView *)leftLinImageView {

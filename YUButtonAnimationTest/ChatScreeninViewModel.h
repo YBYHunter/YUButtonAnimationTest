@@ -14,6 +14,9 @@
 
 @property (nonatomic,strong) NSMutableArray * viewList;
 
+@property (nonatomic, copy) void (^didClickBlock)(BOOL isCanClick);
+
 - (void)changeOtherViewType:(ChatScreeninButView *)selectView currentType:(ChatScreeninButViewType)currentType;
+
 
 @end

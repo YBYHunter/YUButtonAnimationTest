@@ -20,6 +20,7 @@
 		6B2D6AB11E7BE6EC006BAE5B /* yuan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B2D6AB01E7BE6EC006BAE5B /* yuan@3x.png */; };
 		6B2D6AB51E7BE939006BAE5B /* UIView+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D6AB41E7BE939006BAE5B /* UIView+addition.m */; };
 		6B2D6AB81E7BE97D006BAE5B /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D6AB61E7BE97D006BAE5B /* UIImageView+CornerRadius.m */; };
+		6B6470991E822A16007CC445 /* ChatScreeninContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6470981E822A16007CC445 /* ChatScreeninContainerView.m */; };
 		6BADB7F31E7FB39D000BBB6C /* CMSCoinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BADB7F21E7FB39D000BBB6C /* CMSCoinView.m */; };
 		6BADB7F61E7FF310000BBB6C /* ChatScreeninViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BADB7F51E7FF310000BBB6C /* ChatScreeninViewModel.m */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,8 @@
 		6B2D6AB41E7BE939006BAE5B /* UIView+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+addition.m"; sourceTree = "<group>"; };
 		6B2D6AB61E7BE97D006BAE5B /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
 		6B2D6AB71E7BE97D006BAE5B /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
+		6B6470971E822A16007CC445 /* ChatScreeninContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatScreeninContainerView.h; sourceTree = "<group>"; };
+		6B6470981E822A16007CC445 /* ChatScreeninContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatScreeninContainerView.m; sourceTree = "<group>"; };
 		6BADB7F11E7FB39D000BBB6C /* CMSCoinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSCoinView.h; sourceTree = "<group>"; };
 		6BADB7F21E7FB39D000BBB6C /* CMSCoinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSCoinView.m; sourceTree = "<group>"; };
 		6BADB7F41E7FF310000BBB6C /* ChatScreeninViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatScreeninViewModel.h; path = ../ChatScreeninViewModel.h; sourceTree = "<group>"; };
@@ -177,6 +180,8 @@
 		6BADB7F01E7FB39D000BBB6C /* CMSCoinView */ = {
 			isa = PBXGroup;
 			children = (
+				6B6470971E822A16007CC445 /* ChatScreeninContainerView.h */,
+				6B6470981E822A16007CC445 /* ChatScreeninContainerView.m */,
 				6B2D6AAB1E7BE569006BAE5B /* ChatScreeninButView.h */,
 				6B2D6AAC1E7BE569006BAE5B /* ChatScreeninButView.m */,
 				6BADB7F41E7FF310000BBB6C /* ChatScreeninViewModel.h */,
@@ -325,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6470991E822A16007CC445 /* ChatScreeninContainerView.m in Sources */,
 				6B2D6AB51E7BE939006BAE5B /* UIView+addition.m in Sources */,
 				6B2D6A801E7BE472006BAE5B /* ViewController.m in Sources */,
 				6B2D6AAD1E7BE569006BAE5B /* ChatScreeninButView.m in Sources */,
